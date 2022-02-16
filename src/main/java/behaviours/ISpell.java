@@ -1,5 +1,7 @@
 package behaviours;
 
+import enemy.Enemy;
+
 public interface ISpell {
-    void cast();
+    void cast(Enemy enemy);
 }
