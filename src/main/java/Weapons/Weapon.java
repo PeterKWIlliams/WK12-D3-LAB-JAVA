@@ -1,7 +1,9 @@
 package Weapons;
 
-public class Weapon {
-    private int damage;
+import behaviours.IWeapon;
+
+abstract public class Weapon implements IWeapon {
+    protected int damage;
 
     public Weapon(int damage) {
         this.damage = damage;

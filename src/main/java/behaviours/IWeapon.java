@@ -1,7 +1,8 @@
 package behaviours;
 
+import Roles.Combatants;
 import enemy.Enemy;
 
 public interface IWeapon {
-     void attack(Enemy enemy);
+     void attack(Combatants combatant);
 }

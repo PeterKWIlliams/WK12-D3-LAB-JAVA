@@ -1,5 +1,6 @@
 package Weapons;
 
+import Roles.Combatants;
 import behaviours.IWeapon;
 import enemy.Enemy;
 
@@ -10,8 +11,8 @@ public class Club extends Weapon implements IWeapon {
         super(damage);
     }
 
-    @Override
-    public void attack(Enemy enemy) {
-
+    public void attack(Combatants combatants) {
+        int value = combatants.getHealth() - this.damage;
+        combatants.setHealth( value);
     }
 }

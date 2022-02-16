@@ -11,7 +11,7 @@ public class OgreTest {
 
     @Before
     public void before(){
-        ogre = new Ogre(100,"Nick");
+        ogre = new Ogre("Nick",100);
     }
 
     @Test

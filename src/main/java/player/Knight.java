@@ -5,8 +5,8 @@ import enemy.Enemy;
 
 public class Knight extends Fighter {
 
-    public Knight(int health, String name, IWeapon weapon ) {
-        super(health, name, weapon);
+    public Knight(String name, int health, IWeapon weapon ) {
+        super(name, health, weapon);
     }
 
 

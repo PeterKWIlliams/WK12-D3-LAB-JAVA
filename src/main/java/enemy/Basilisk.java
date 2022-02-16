@@ -4,8 +4,8 @@ import behaviours.ITakeDamage;
 import player.Player;
 
 public class Basilisk extends Enemy implements ITakeDamage {
-    public Basilisk(int health, String name) {
-        super(health, name);
+    public Basilisk(String name,int health ) {
+        super(name, health);
     }
 
 

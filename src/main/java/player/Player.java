@@ -1,27 +1,13 @@
 package player;
 
-abstract public class Player {
-    private int health;
-    private String name;
+import Roles.Combatants;
 
-    public Player(int health, String name) {
-        this.health = health;
-        this.name = (name);
-    }
+abstract public class Player extends Combatants {
 
-    public int getHealth() {
-        return health;
-    }
 
-    public void setHealth(int health) {
-        this.health = health;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public Player(String name, int health) {
+        super(name, health);
     }
 }
+
+
